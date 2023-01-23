@@ -1,6 +1,6 @@
 import React, { useState }  from "react";
-import { Button } from "./Components/Task-1/Button.jsx";
-import { TextDisplay } from "./Components/Task-1/TextDisplay.jsx";
+import { Button } from "./Button.jsx";
+import { TextDisplay } from "./TextDisplay.jsx";
 
 export const Counter = () => {
 
@@ -12,7 +12,9 @@ export const Counter = () => {
     return (
       <>
         <Button onClick={handleIncrement} text={'increment'} />
+
         <TextDisplay text={state} />
+        
         <Button onClick={handleDecrement} text={'decrement'} />
       </>
     )

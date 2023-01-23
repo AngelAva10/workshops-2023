@@ -1,8 +1,8 @@
 import React from "react";
 
 export const MyList = () => {
-    const carBrands = ['Mazda',
-    'Toyota',
+    const carBrands = [
+    'Mazda',
     'Toyota',
     'Chevrolet',
     'Nissan',
@@ -21,9 +21,9 @@ export const MyList = () => {
       {
         carBrands.map((brand, index) => {
           return (
-            <li style={{ listStyle: "none", fontWeight: "normal", fontsize: "15px",
-            fontStyle: "italic",}}
-             key={index} >{brand} - Available Units:{carBrands.length + index }</li>
+            <li style={{ listStyle: "none", fontWeight: "extra-bold", fontsize: "17px",
+            fontStyle: "fantasy", color: "blue"}}
+             key={index} >{brand} - Disponible: {brand.length + index }</li>
           )
         })
       }
