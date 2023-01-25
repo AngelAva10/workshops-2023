@@ -7,9 +7,9 @@ import { MyList } from './Components/Task-3/MyList.jsx';
 function App() {
   return (
     <div className="App">
-      <Counter/>
+       <Counter />
+     <MyList />
       <MyText />
-      <MyList />
     </div>
   );
 }

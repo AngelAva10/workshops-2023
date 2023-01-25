@@ -1,12 +1,13 @@
-import React from "react"; 
-import { useState } from "react";
+import React from 'react'
+import { useState } from 'react'
 
 export const MyText = () => {
-    const [value, setValue] = useState('')
-    return (<>
-    <input onChange={(event) => setValue(event.target.value)}  />
-    <h2>{value}</h2>
+  const [value, setValue] = useState('')
+  return (
+    <>
+    <label htmlFor='input'>Message</label>
+      <input id='input' onChange={(event) => setValue(event.target.value)} value={value} />
+      <h2>{value}</h2>
     </>
-)
-
+  )
 }
