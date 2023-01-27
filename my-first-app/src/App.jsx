@@ -1,15 +1,15 @@
 import './App.css';
 import React from "react";
-import { Counter } from "./Components/Task-1/Counter.jsx";
-import { MyText } from "./Components/Task-2/MyText.jsx";
-import { MyList } from './Components/Task-3/MyList.jsx';
+import { Button } from "./Components/Button.jsx";
+import { Input } from "./Components/Input.jsx";
+import { List } from './Components/List.jsx';
 
 function App() {
   return (
     <div className="App">
-      <Counter/>
-      <MyText />
-      <MyList />
+      <Input />
+      <Button />
+      <List />
     </div>
   );
 }
