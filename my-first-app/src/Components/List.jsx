@@ -1,12 +1,13 @@
 import React from "react";
-//mport u
+import { Input } from "./Input";
 
-export const List = () => {
+
+export const List = ({text})  => {
 
     return (
       
       <ul>
-        
+        <li>{text}</li>
       </ul>
       
     )
