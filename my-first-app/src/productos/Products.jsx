@@ -9,21 +9,19 @@ export const Products = ({id, description}) => {
 useEffect(() => {
    fetch('https://fakestoreapi.com/products')
    .then(res=>res.json())
-   .then(json=>setProducts(products))
-   .then(json=>console.log(json))
-          }, []);
+   .then((products)  => setProducts(products));
+   
+}, []);
             
     return (
     <div>
       Products
       {products.map((product) => (
         <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src="" />
+        <Card.Img variant="top" src={product.image} />
         <Card.Body>
           <Card.Title>{product.title}</Card.Title>
-          <Card.Text>
-          {product.description}
-          </Card.Text>
+          <Card.Text>{product.description}</Card.Text>
         </Card.Body>
       </Card>
       ))}
