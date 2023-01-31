@@ -1,11 +1,17 @@
-import './App.css';
-import React from "react";
-import { TodoList } from './Components/TodoList/TodoList';
+import { useEffect, useState } from 'react';
+import { Products } from './productos/Products';
 
 function App() {
+  const [state, setState] = useState();
+
+  console.log('app state', state);
+
   return (
     <div className="App">
-      <TodoList />
+      <header className="App-header">
+<Products/>
+        <span className="text">learn react</span>
+      </header>
     </div>
   );
 }
