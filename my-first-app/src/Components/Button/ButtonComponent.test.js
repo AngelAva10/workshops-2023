@@ -1,5 +1,5 @@
 import {fireEvent, render, screen} from '@testing-library/react'
-import { ButtonComponent } from './ButtonComponent'
+import { ButtonComponent } from './ButtonComponent';
 
 describe("Describe of button component", () => {
   it("should render the input component", () => {

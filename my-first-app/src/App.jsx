@@ -1,15 +1,11 @@
 import './App.css';
 import React from "react";
-import { Button } from "./Components/Button.jsx";
-import { Input } from "./Components/Input.jsx";
-import { List } from './Components/List.jsx';
+import { TodoList } from './Components/TodoList/TodoList';
 
 function App() {
   return (
     <div className="App">
-      <Input />
-      <Button />
-      <List />
+      <TodoList />
     </div>
   );
 }

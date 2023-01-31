@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import { ButtonComponent } from './ButtonComponent'
-import { InputComponent } from './InputComponent'
-import { TaskComponent } from './TaskComponent';
+import { ButtonComponent } from '../Button/ButtonComponent';
+import { InputComponent } from '../Input/InputComponent';
+import { TaskComponent } from '../Task/TaskComponent';
 
 export const TodoList = ( { text } ) => {
 
