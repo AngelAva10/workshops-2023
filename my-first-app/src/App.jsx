@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Products } from './productos/Products';
+import './App.css';
 
 function App() {
   const [state, setState] = useState();
@@ -10,7 +11,6 @@ function App() {
     <div className="App">
       <header className="App-header">
 <Products/>
-        <span className="text">learn react</span>
       </header>
     </div>
   );
