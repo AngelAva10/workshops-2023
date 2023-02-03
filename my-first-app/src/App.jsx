@@ -1,19 +1,16 @@
-import { useEffect, useState } from 'react';
-import { Products } from './productos/Products';
+/* eslint-disable import/no-extraneous-dependencies */
+import {  Route, Routes } from 'react-router-dom';
 import './App.css';
+import { About } from './pages/About';
+import { Home } from './pages/Home';
+// import { Form } from './formularios/Form';
 
-function App() {
-  const [state, setState] = useState();
-
-  console.log('app state', state);
-
-  return (
-    <div className="App">
-      <header className="App-header">
-<Products/>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+  <Routes>
+    <Route path="/" element={<Home />} />
+    <Route path="/about" element={<About />} />
+    <Route path="*" element={<h1>404: Not Found</h1>} />
+  </Routes>
+);
 
 export default App;
